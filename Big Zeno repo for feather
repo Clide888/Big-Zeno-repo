@@ -1,0 +1,1474 @@
+{
+    "name": "Merged Repo",
+    "identifier": "merged.repo.id",
+    "iconURL": "",
+    "subtitle": "Combined AltStore Repo",
+    "description": "This repo combines multiple AltStore-compatible sources.",
+    "apps": [
+        {
+            "name": "TrollInstallerX",
+            "bundleIdentifier": "com.Alfie.TrollInstallerX",
+            "developerName": "alfiecg24",
+            "subtitle": "The universal TrollStore installer for iOS 14.0 - 17.0.0.0 beta 4",
+            "localizedDescription": "Overview\n\nTrollInstallerX is a universal TrollStore installer. It focuses on being extremely reliable and easy to use. It is also very fast, being able to install TrollStore and/or its persistence helper in a matter of seconds on the latest devices.\n\nTrollInstallerX supports all devices running iOS 14.0 - 16.6.1, both arm64 and arm64e. It makes use of one of two different methods to install TrollStore, depending on what device and iOS you have. These methods are:\n\n\u2022 Direct installation: using the kfd kernel exploit, along with the dmaFail PPL bypass on iOS 15.2+ arm64e devices, TrollInstallerX can install both TrollStore and its persistence helper directly onto the device without having to leave the installer.\n\n   - Supports iOS 14.0 - 16.6.1 (arm64) and iOS 14.0 - 16.5.1 (arm64e).\n      \u2022 Note: A15, A16, and M2 devices on iOS 16.5.1 do not support this method.\n      \u2022 Note: A8 devices are only supported on iOS 14.0 - 15.1 for the time being.\n\u2022 Indirect installation: Using the kfd kernel exploit, TrollInstallerX can replace a system application of your choice with the TrollStore persistence helper. This method only exists due to both the lack of a PPL bypass on iOS 16.6 and above, as well as the fact that dmaFail is non-functional on A15, A16, and M2 devices on iOS 16.5.1.\n\n   - Supports iOS 16.5.1 - 16.6.1 (arm64e).\n      \u2022 Note: This method is the only method that supports A15, A16, and M2 devices on iOS 16.5.1.\n\nBoth methods allow you to install a persistence helper into a removable system app. The reason that this is needed is due to the way that the CoreTrust bug (used by TrollStore) works - in certain circumstances, TrollStore and other apps installed by it will be reset to User registration, instead of System. You cannot open any of these apps until you have used the persistence helper to set them back to System registration.\n\n\nUsage\n\nTrollInstallerX is extremely easy to use. Simply download the latest release from the Releases page, and sideload it using your preferred method. Once installed, open the app and press the \"Install\" button. From there, TrollStore and/or its persistence helper will be installed onto your device.\n\nTrollInstallerX will automatically choose the best exploit for your device. However, in some cases, you may want to choose a specific exploit. To do this, simply open the settings view and select the exploit that you want to use. Once you have selected it, press the \"Install TrollStore\" button and TrollInstallerX will use the exploit you have chosen.\n\nNote: iOS 16.2 - 16.6.1 and iOS 15.7.2 - 15.8.2 require an internet connection in order for TrollInstallerX to download the kernelcache and patchfind it.",
+            "iconURL": "https://i.imgur.com/lQt6WqH.png",
+            "tintColor": "0363a9",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://i.imgur.com/aIyWLRP.jpeg",
+                "https://i.imgur.com/o5REDKV.jpeg"
+            ],
+            "version": "1.0.3",
+            "minOSVersion_0": "14.0.0",
+            "maxOSVersion_0": "17.0.0",
+            "versionDate": "2024-09-12",
+            "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
+            "versionDescription": "\u2022 Update for Xcode 15.4+ compilation\n\u2022 Removing confusing logging around exploit deinitialisation\n\u2022 Fix arm64e devices on iOS 15.7.x that couldn't download the kernelcache by updating libgrabkernel2",
+            "size": 25800000,
+            "versions": [
+                {
+                    "version": "1.0.3",
+                    "minOSVersion_0": "14.0.0",
+                    "maxOSVersion_0": "17.0.0",
+                    "date": "2024-09-12",
+                    "localizedDescription": "\u2022 Update for Xcode 15.4+ compilation\n\u2022 Removing confusing logging around exploit deinitialisation\n\u2022 Fix arm64e devices on iOS 15.7.x that couldn't download the kernelcache by updating libgrabkernel2",
+                    "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
+                    "size": 25800000
+                },
+                {
+                    "version": "1.0.2",
+                    "minOSVersion_0": "14.0.0",
+                    "maxOSVersion_0": "17.0.0",
+                    "date": "2024-04-08",
+                    "localizedDescription": "\u2022 Full support for iOS 17.0 beta 1 - 4 on arm64 devices\n\nNote: arm64e support for the above versions is still being worked on.",
+                    "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
+                    "size": 6570000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Santander (MDC)",
+            "bundleIdentifier": "org.haxi0.santander",
+            "developerName": "haxi0",
+            "subtitle": "A Modern File Manager MacDirtyCow Devices",
+            "localizedDescription": "A new, enhanced File Manager for iOS devices with the MDC exploit (IOS 14.0 - 16.1.2) for full file access.\n\nSantander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs.\n\nNote: The project is still in beta, and there still quite a lot of bugs to fix & enhancements to make.",
+            "iconURL": "https://static.appdb.to/images/cydia-1900001066-icon-1673074358.png",
+            "tintColor": "596d8d",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://static.appdb.to/images/cydia-1900001084-iphone-0-1674953851.png",
+                "https://static.appdb.to/images/cydia-1900001084-iphone-1-1674953851.png",
+                "https://static.appdb.to/images/cydia-1900001084-iphone-2-1674953851.png",
+                "https://static.appdb.to/images/cydia-1900001084-iphone-3-1674953851.png"
+            ],
+            "version": "0.4",
+            "minOSVersion_0": "15.0.0",
+            "maxOSVersion_0": "16.1.2",
+            "versionDate": "2023-02-10",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Santander.MDC.v0.4.ipa",
+            "versionDescription": "\u2022 Classic MDC overwrite is in the app, that means you can overwrite files in /System (hold a file to see a Replace action)\n\n\u2022 Respring action added.",
+            "size": 4540000,
+            "versions": [
+                {
+                    "version": "0.4",
+                    "minOSVersion_0": "15.0.0",
+                    "maxOSVersion_0": "16.1.2",
+                    "date": "2023-02-10",
+                    "localizedDescription": "\u2022 Classic MDC overwrite is in the app, that means you can overwrite files in /System (hold a file to see a Replace action)\n\n\u2022 Respring action added.",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Santander.MDC.v0.4.ipa",
+                    "size": 4540000
+                }
+            ],
+            "beta": true
+        },
+        {
+            "name": "PostBox",
+            "bundleIdentifier": "com.simplycode.PostBox",
+            "developerName": "PostBox Team",
+            "subtitle": "The latest jailbreak news at your fingertips",
+            "localizedDescription": "\u2022 A pool of feeds. Enjoy a lively feed of various sources to always stay connected with the jailbreak scene. Sources are updated frequently so you don't miss out!\n\n\u2022 Powered externally. PostBox enables support for third-party jailbreak sources such as r/jailbreak and iDownloadBlog. More content will be coming soon in the future.\n\n\u2022 Repositories are libraries of packages. PostBox contains over 200 repos for centralization and provides a system for efficient repo finding. You can now effortlessly look for information that will previously require painstaking work.\n\n\u2022 Intuitive design. Buttons with different contrast prompts users for interaction. Animations, haptics and color changes enable engaging feedback when selected.\n\n\u2022 Review packages. The ability to review packages creates new opportunities for users and developers alike. Any package can be reviewed regardless of repository or depiction differences.",
+            "iconURL": "https://static.appdb.to/images/cydia-102005202-icon-1661962646.png",
+            "tintColor": "b3b3b3",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://www.postbox.news/assets/images/thumbPhone.webp",
+                "https://www.postbox.news/assets/images/newsPhone.webp",
+                "https://www.postbox.news/assets/images/extractPhone.webp",
+                "https://www.postbox.news/assets/images/repoPhone.webp",
+                "https://www.postbox.news/assets/images/reviewPhone.webp",
+                "https://www.postbox.news/assets/images/storyboardPhone.webp"
+            ],
+            "version": "0.8.1",
+            "versionDate": "2023-05-14",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PostBox.v0.8.1.ipa",
+            "versionDescription": "\u2022 Added PostBox v0.8.1",
+            "size": 8080000,
+            "versions": [
+                {
+                    "version": "0.8.1",
+                    "date": "2023-05-14",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PostBox.v0.8.1.ipa",
+                    "localizedDescription": "\u2022 Added PostBox v0.8.1",
+                    "size": 8080000,
+                    "absoluteVersion": "0.8.1"
+                }
+            ],
+            "beta": true
+        },
+        {
+            "name": "emuThreeDS",
+            "bundleIdentifier": "com.antique.emuThreeDS",
+            "developerName": "Antique",
+            "subtitle": "A Nintendo 3DS emulator for IOS",
+            "localizedDescription": "Nintendo 3DS emulator for Apple devices based on Citra.",
+            "iconURL": "https://i.imgur.com/5wBkakf.png",
+            "tintColor": "acaea8",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://play-lh.googleusercontent.com/i3Fdd7SIrXYH_RIsypS8bwKnqq808h8XxO4fg3eYIrIqLg2bkf-Vm7LfBNDKOnLENQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/6pv18OLDP58bZLWH0RZMw5ZcYAYyEFmlA1sqX0BlrevPLWhTO7C0ua0X3sNiOlrkM1ZQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/doTVi2IWLPKGVCz2EeZKNEDOkjxIgbridWQiKqVgw7yhc0OQXNR7CvmcglgNv1M4kAQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/FZakW5LiR3dJen206_ZlIoxfICxFNX-f5lpxcYtouA5VShZtsZvCi5bEicSN_dLeUQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/UhUl8DQRlWiITbsrYEYb89rrvpALAUn7Wgyb6PKCjgiG5gF2WHL7piRBf2enCZZWwQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/uxwledxQN-64HfwyfbUFXa7pcgHTy_78iiKXZwArALZqhpR1PjWZfOGjdgwRCTgwnjY=w1052-h592-rw"
+            ],
+            "version": "1.0.5.2",
+            "versionDate": "2023-05-13",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/emuThreeDS.v1.0.5.2.ipa",
+            "versionDescription": "Added:\n\n\u2022 Emulation menu to the in-game options button.\n\u2022 Pause and resume emulation option to the Emulation menu.\n\u2022 Preload textures by default to improve performance.\n\u2022 Portrait touch and drag support.\nReimplemented landscape mode for testing (screens will not be side-by-side yet).\n\nChanged:\n\n\u2022 Layout of the emulation to display below the status bar.\n\u2022 Increased priority of the emulation thread to squeeze out more performance.\n\nFixed:\n\n\u2022 Issue where the status bar would display black text on a black background.",
+            "size": 30300000,
+            "versions": [
+                {
+                    "version": "1.0.5.2",
+                    "date": "2023-05-13",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/emuThreeDS.v1.0.5.2.ipa",
+                    "localizedDescription": "Added:\n\n\u2022 Emulation menu to the in-game options button.\n\u2022 Pause and resume emulation option to the Emulation menu.\n\u2022 Preload textures by default to improve performance.\n\u2022 Portrait touch and drag support.\nReimplemented landscape mode for testing (screens will not be side-by-side yet).\n\nChanged:\n\n\u2022 Layout of the emulation to display below the status bar.\n\u2022 Increased priority of the emulation thread to squeeze out more performance.\n\nFixed:\n\n\u2022 Issue where the status bar would display black text on a black background.",
+                    "size": 30300000,
+                    "absoluteVersion": "1.0.5.2"
+                }
+            ],
+            "beta": true
+        },
+        {
+            "name": "PPSSPP",
+            "bundleIdentifier": "org.ppsspp.ppsspp",
+            "developerName": "Henrik Rydg\u00e5rd",
+            "subtitle": "A fast and portable PSP emulator for IOS",
+            "localizedDescription": "PPSSPP is the best and only PSP emulator for iOS written in C++. It is capable of running a lot of original games but, depending on the power of your device, not all may run at full speed due to restrictions on non-jailbroken devices.\n\nThe app was originally created by Henrik Rydg\u00e5rd in November 2012; however, iOS builds are mostly managed by talented developer, Karen Tsai (aka @angelxwind) and a large group of contributors that submit issue reports and fixes. Several versions of PPSSPP can be played on numerous devices such as Android, Windows, Mac, Linux and Blackberry 10. The iOS version can be found on both Jailbreak and non-Jailbreak devices.\n\nPPSSPP supports all versions of iPad, iPhone, iPod touch running iOS 5 and above; this includes iPhone 5 and other retina-enabled devices. The emulator does not require bios to play, PPSSPP is - in many ways - a \u201cHLE\u201d emulator. PPSSPP requires ROM images, specifically .ISO or .CSO files, to play. No ROMs are included in this copy of the emulator. If you own any games, add them through iTunes Sharing or other programs like 'iExplorer.' Keep in mind these files are extremely big, sometimes taking several gigs in size.\n\nThe emulator is built to use JIT decompilers (dynarecs) which can only be accessed on a jailbroken device due to the codesigining requirement. Therefore, most games will run very slow on non-jailbroken devices; however, there are a few older PSP games that will run just fine and up to speed depending on your iOS device.",
+            "iconURL": "https://i.imgur.com/JP0Fncv.png",
+            "tintColor": "21486b",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://i.imgur.com/CWl6GgH.png",
+                "https://i.imgur.com/SxmN1M0.png",
+                "https://i.imgur.com/sGWgR6z.png",
+                "https://i.imgur.com/AFKTdmZ.png"
+            ],
+            "version": "1.15.3",
+            "versionDate": "2023-05-14",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PPSSPP.v1.15.3.ipa",
+            "versionDescription": "\u2022 Assorted minor crash- and other fixes\n\u2022 Control mapping: Fix bugs in mapping UI causing trouble with some controllers\n\n",
+            "size": 27700000,
+            "versions": [
+                {
+                    "version": "1.15.3",
+                    "date": "2023-05-14",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PPSSPP.v1.15.3.ipa",
+                    "localizedDescription": "1.15.3",
+                    "size": 27700000,
+                    "absoluteVersion": "1.15.3"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Filza (MDC)",
+            "bundleIdentifier": "com.tigisoftware.Filza",
+            "developerName": "TIGI Software",
+            "subtitle": "Filza for MacDirtyCow Devices!",
+            "localizedDescription": "Filza with MDC Support and No Ads! (Limited Features)\n\nA Powerful File Manager for iPhone, iPad, iPod Touch. Flat design, with best performance:\n\n\u2022 File viewers: Media player, Hex editor, Text editor, SQLite Editor, IPA Installer, DEB Installer, Web viewer, Terminal ...\n\u2022 SQLite Editor was design for large query, works well with over 100k+ rows in result\n\u2022 Execute shell scripts and applications just few tap\n\u2022 Cloud services: Dropbox, Box, Google Drive, WebDAV, FTP, SFTP\n\u2022 Supports SMB (Windows File Sharing)\n\u2022 Search files and folders easily\n\u2022 Powerful files copy/move design, just few taps\n\u2022 Download normal/html file with easy way: copy html link to Pasteboard, and paste it to destination folder\n\u2022 Manage Music library easily: import/export/delete/rename ... just do same as normal files\n\u2022 Explore files in list view mode or grid view mode, with thumbnail\n\u2022 Compress zip file, decompress zip/7z/rar/tar/tar.gz/gz ...\n\u2022 Install and extract DEB/IPA file, view DEB/IPA file information\n\u2022 Black theme and white theme, custom folder icon, file",
+            "iconURL": "https://static.appdb.to/images/cydia-1900000088-icon.png",
+            "tintColor": "047a9a",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://static.appdb.to/images/cydia-1900001095-iphone-0-1675790063.png",
+                "https://static.appdb.to/images/cydia-1900001095-iphone-1-1675790064.png",
+                "https://static.appdb.to/images/cydia-1900001095-iphone-2-1675790064.png",
+                "https://static.appdb.to/images/cydia-1900001095-iphone-3-1675790064.png"
+            ],
+            "version": "3.7",
+            "minOSVersion_0": "15.0.0",
+            "maxOSVersion_0": "16.1.2",
+            "versionDate": "2023-05-14",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Filza.MDC.No.Ads.v3.7.ipa",
+            "versionDescription": "\u2022 Added Filza (MDC) v3.7",
+            "size": 9040000,
+            "versions": [
+                {
+                    "version": "3.7",
+                    "date": "2023-05-14",
+                    "minOSVersion": "15.0.0",
+                    "maxOSVersion_0": "16.1.2",
+                    "localizedDescription": "\u2022 Added Filza (MDC) v3.7",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Filza.MDC.No.Ads.v3.7.ipa",
+                    "size": 9040000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Scarlet",
+            "bundleIdentifier": "com.DebianArch.ScarletPersonalXYZZZ",
+            "developerName": "DebianArch",
+            "subtitle": "Get more than an app store. Get Scarlet.",
+            "localizedDescription": "NOTE: The developer does not change the version (1.0), so if you see new features online or if the app stops working, uninstall and reinstall the app. The download link on AltStore is from the official website so what you download here will always be the latest.\n\nAlso, getting scarlet from AltStore means that you will never lose the app if you keep refreshing - downloading it from the official website will likely result in the certificate being revoked and you have to wait for it to be resigned.\n\n\nWhy Us?\n\nScarlet offers a new community for developers to submit their paid apps, allowing users to seamlessly protect themselves from revokes. Our goal getting into Scarlet is to give everybody access to a store that doesn't tell people to do the workarounds. Instead, we created an app with every user in mind to bring a smooth experience.\n\n\nTrue repo system\n\nScarlet offers the first ever true repo system for all users.\nWhat is a true repo system ? - Our repo system supports jailbreak repos and jailed users can make use of some features added to the side.\nThese include 1. Force install jailbroken apps while jailed\n2. Automatically/Manually injects the tweak into the app it's meant for(no jailbreak required)\n\nWe include native repos specifically designed for Scarlet. Developers have the ability to choose a dylibs/debs to inject into the specificed app.\n \n\nMade by Pros\n\nScarlet's GUI was designed by Xeviks.\nHe has brought color, vibrancy, movement, and modernity - yet keeping the look simplistic.\nDebianArch is the solo-dev of the Scarlet app and is bringing innovative features to reshape the community that was left unchanged. ",
+            "iconURL": "https://pbs.twimg.com/profile_images/1367920028813787144/cwvAQV9f_400x400.jpg",
+            "tintColor": "8d2229",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://static.appdb.to/images/cydia-1900001033-iphone-0-1669967899.png",
+                "https://static.appdb.to/images/cydia-1900001033-iphone-1-1669967899.png",
+                "https://static.appdb.to/images/cydia-1900001033-iphone-2-1669967900.png",
+                "https://static.appdb.to/images/cydia-1900001033-iphone-3-1669967900.png"
+            ],
+            "version": "1.0",
+            "versionDate": "2023-04-24",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ScarletAlpha.ipa",
+            "versionDescription": "\u2022 Added Ability to import/Export app backups.\n\u2022 Added ability to modify IPA (Add/Remove Tweaks etc.)",
+            "size": 15500000,
+            "beta": true
+        },
+        {
+            "name": "Odyssey",
+            "bundleIdentifier": "org.coolstar.odyssey",
+            "developerName": "Odyssey Team",
+            "subtitle": "A new jailbreak for a new era.",
+            "localizedDescription": "Supporting iOS Versions: 13.0 - 13.7.\n\nOdyssey is the first jailbreak to be written almost entirely in Swift. Completely open source and welcomes community contributions and pull requests, as a tribute to the dearly departed s0uthwes and his continued optimism and faith in the project. Comes with the open source Procursus bootstrap, designed from the ground up with openness and compatiblity in mind. Along with a new tweak injection platform, libhooker.",
+            "iconURL": "https://theodyssey.dev/assets/images/icon.png",
+            "tintColor": "9766a7",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://theodyssey.dev/assets/images/ss-1.png",
+                "https://theodyssey.dev/assets/images/ss-2.png",
+                "https://theodyssey.dev/assets/images/ss-3.png"
+            ],
+            "version": "1.4.3",
+            "minOSVersion_0": "13.0.0",
+            "maxOSVersion_0": "13.7.0",
+            "versionDate": "2023-04-03",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Odyssey.Jailbreak.v1.4.3.ipa",
+            "versionDescription": "\u2022 Updated Sileo to 2.3-1",
+            "size": 27200000,
+            "versions": [
+                {
+                    "version": "1.4.3",
+                    "minOSVersion_0": "13.0.0",
+                    "maxOSVersion_0": "13.7.0",
+                    "date": "2023-04-03",
+                    "localizedDescription": "\u2022 Update Sileo to 2.3-1",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Odyssey.Jailbreak.v1.4.3.ipa",
+                    "size": 27200000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Taurine",
+            "bundleIdentifier": "org.coolstar.taurine",
+            "developerName": "Odyssey Team",
+            "subtitle": "Time to get amped.",
+            "localizedDescription": "Taurine is an iOS 14.0-14.8.1 jailbreak, utilizing Procursus and Libhooker.",
+            "iconURL": "https://taurine.app/assets/images/icon.png",
+            "tintColor": "9e3a47",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://taurine.app/assets/images/ss-1.png",
+                "https://taurine.app/assets/images/ss-2.png",
+                "https://taurine.app/assets/images/ss-3.png"
+            ],
+            "version": "1.1.6",
+            "minOSVersion_0": "14.0.0",
+            "maxOSVersion_0": "14.8.1",
+            "versionDate": "2023-09-23",
+            "downloadURL": "https://github.com/Odyssey-Team/Taurine/releases/download/1.1.7-3/Taurine.1.1.7-3.ipa",
+            "versionDescription": "\u2022 Fix kfd change being implemented incorrectly",
+            "size": 30838370,
+            "versions": [
+                {
+                    "version": "1.1.7-3",
+                    "minOSVersion_0": "14.0.0",
+                    "maxOSVersion_0": "14.8.1",
+                    "date": "2023-09-23",
+                    "localizedDescription": "\u2022 Fix kfd change being implemented incorrectly",
+                    "downloadURL": "https://github.com/Odyssey-Team/Taurine/releases/download/1.1.7-3/Taurine.1.1.7-3.ipa",
+                    "size": 30838370
+                },
+                {
+                    "version": "1.1.6",
+                    "minOSVersion_0": "14.0.0",
+                    "maxOSVersion_0": "14.4.1",
+                    "date": "2022-07-17",
+                    "localizedDescription": "\u2022 Backports DER entitlement fixes from Taurine15\n\u2022 Backports codesignature fixes from Taurine15\n\u2022 Backports various other fixes from Taurine15",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Taurine.Jailbreak.v1.1.6.ipa",
+                    "size": 31938370
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "unc0ver",
+            "bundleIdentifier": "science.xnu.undecimus",
+            "developerName": "Pwn20wnd",
+            "subtitle": "The most advanced jailbreak tool.",
+            "localizedDescription": "unc0ver is an advanced jailbreaking tool for iOS devices. Jailbreaking with unc0ver unlocks the true power of your iDevice. Customize the appearance of your device, gain full control over how your device operates, obtain access to hidden features of iOS, and more.\n\nCompatibility:\n\u2022 unc0ver supports iOS 11.0 through to iOS 14.3 (Excluding 13.5.1 and 13.3.1)\n\nStability:\n\u2022 Utilizing the latest stable APT and Mobile Substrate, stability is guaranteed.\n\nSecurity:\n\u2022 Utilizing native system sandbox exceptions, security remains intact while enabling access to jailbreak files.",
+            "iconURL": "https://i.imgur.com/5aehDxj.png",
+            "tintColor": "515151",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://i.imgur.com/ItMaRRV.png",
+                "https://i.imgur.com/bjzyqpY.png",
+                "https://i.imgur.com/3TMGkaO.png",
+                "https://i.imgur.com/gTYfncm.png"
+            ],
+            "version": "8.0.2",
+            "minOSVersion_0": "11.0",
+            "maxOSVersion_0": "14.8.0",
+            "versionDate": "2021-12-29",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Unc0ver.Jailbreak.v8.0.2.ipa",
+            "versionDescription": "\u2022 Added exploit guidance to improve reliability on A12-A13 iPhones running iOS 14.6-14.8\n\u2022 Fixed exploit reliability on iPhone XS devices running iOS 14.6-14.8",
+            "size": 54489484,
+            "versions": [
+                {
+                    "version": "8.0.2",
+                    "minOSVersion_0": "11.0",
+                    "maxOSVersion_0": "14.8.0",
+                    "date": "2021-12-29",
+                    "localizedDescription": "\u2022 Added exploit guidance to improve reliability on A12-A13 iPhones running iOS 14.6-14.8\n\u2022 Fixed exploit reliability on iPhone XS devices running iOS 14.6-14.8",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Unc0ver.Jailbreak.v8.0.2.ipa",
+                    "size": 54489484
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Dopamine",
+            "bundleIdentifier": "com.opa334.Dopamine",
+            "developerName": "opa334",
+            "subtitle": "The semi-untethered jailbreak for iOS 15 - 16",
+            "localizedDescription": "Rootless arm64e jailbreak for iOS 15.0 - 16.5.1 (arm64e) and iOS 15.0 - 16.6.1 (arm64). More details will follow here soon.",
+            "iconURL": "https://i.imgur.com/67ffxsD.jpeg",
+            "tintColor": "0d7d65",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://ellekit.space/dopamine/assets/screenshot_one.png",
+                "https://ellekit.space/dopamine/assets/screenshot_two.png"
+            ],
+            "version": "2.4.1",
+            "minOSVersion_0": "15.0.0",
+            "maxOSVersion_0": "16.5.1",
+            "versionDate": "2025-02-25",
+            "downloadURL": "https://github.com/opa334/Dopamine/releases/download/2.4.1/Dopamine.ipa",
+            "versionDescription": "\u2022 Fix support for iOS 16.0.x [2.4 regression]\n\u2022 (See older update notes on official github page as this is only for 2.4.1)",
+            "size": 47700000,
+            "versions": [
+                {
+                    "version": "2.4.1",
+                    "minOSVersion_0": "15.0.0",
+                    "maxOSVersion_0": "16.5.1",
+                    "date": "2025-02-25",
+                    "localizedDescription": "\u2022 Fix support for iOS 16.0.x [2.4 regression]\n\u2022 (See older update notes on official github page as this is only for 2.4.1)",
+                    "downloadURL": "https://github.com/opa334/Dopamine/releases/download/2.4.1/Dopamine.ipa",
+                    "size": 47700000
+                },
+                {
+                    "version": "2.1.4",
+                    "minOSVersion_0": "15.0.0",
+                    "maxOSVersion_0": "16.5.1",
+                    "date": "2024-05-07",
+                    "localizedDescription": "\u2022 Only automatically fix up permissions of relevant directories inside /var/jb/var/mobile, rather than the entirety of it\n\u2022 Skip permission fix up if either /var/jb/var or /var/jb/var/mobile is a symbolic link, previously there was a bootloop risk when either of them point to the real /var or /var/mobile",
+                    "downloadURL": "https://github.com/opa334/Dopamine/releases/download/2.1.4/Dopamine.ipa",
+                    "size": 47400000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "iTorrent",
+            "bundleIdentifier": "ru.nonamedude.iTorrent",
+            "developerName": "XITRIX",
+            "subtitle": "An ordinary torrent client for iOS with Files app support",
+            "localizedDescription": "iTorrent - a torrent client for iOS with Files app support.\n\nWhat this app can do:\n\n\u2022 Download in the background\n\u2022 Sequential download (use VLC to watch films while loading)\n\u2022 Add torrent files from Share menu (Safari and other apps)\n\u2022 Add magnet links directly from Safari\n\u2022 Store files in Files app (iOS 11+)\n\u2022 File sharing directly from app\n\u2022 Download torrent by link\n\u2022 Download torrent by magnet\n\u2022 Send notification on torrent downloaded\n\u2022 WebDAV Server\n\u2022 Select files to download or not\n\u2022 Change UI to dark theme\n\u2022 RSS Feed",
+            "iconURL": "https://user-images.githubusercontent.com/9553519/80646366-3d271680-8a75-11ea-8b60-9c5edd4ffd60.png",
+            "tintColor": "b31c29",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://static.appdb.to/images/cydia-1900000455-iphone-0.png",
+                "https://static.appdb.to/images/cydia-1900000455-iphone-1.png",
+                "https://static.appdb.to/images/cydia-1900000455-iphone-2.png"
+            ],
+            "version": "1.9",
+            "minOSVersion": "11.0",
+            "versionDate": "2023-02-13",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/iTorrent.v1.9.ipa",
+            "versionDescription": "\u2022 iTorrent updated to v1.9",
+            "size": 12800000,
+            "versions": [
+                {
+                    "date": "2023-02-13",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/iTorrent.v1.9.ipa",
+                    "localizedDescription": "\u2022 iTorrent updated to v1.9",
+                    "minOSVersion": "11.0",
+                    "size": 12800000,
+                    "version": "1.9"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Cowabunga",
+            "bundleIdentifier": "com.leemin.Cowabunga",
+            "developerName": "Leminlimez",
+            "subtitle": "The MacDirtyCow Toolbox for iOS 14 \u2013 iOS 16",
+            "localizedDescription": "A Jailed toolbox application for iOS 14.0-15.7.1 and 16.0-16.1.2 using CVE-2022-46689\n\nEnable Notifications and set Location Services to Always to keep the app running in the background, keep the dock and folder background hidden, and prevent some sound effects from reverting.\n\nWarning: Some changes are permanent on iOS 14.0-14.8.1\n\n\nFeatures:\n\n\u2022 Running in the background to keep some changes from reverting\n\t- From running tests, battery loss is negligible (~1% per day on frequent), but that may vary \n\nSpringboard\n\n\u2022 Hide dock\n\u2022 Hide home bar\n\u2022 Hide folder backgrounds\n\u2022 Disable folder background blur\n\u2022 Disable app switcher blur\n\u2022 Hide CC Module Backgrounds\n\u2022 Hide Notification Banner Background\n\nApp Icon Themes\n\n\u2022 Importing folders of app icons\n\u2022 No WebClips!\n\nAudio\n\n\u2022 Custom sound effects\n\u2022 Upload your own sounds (nearly every audio format allowed!)\n\u2022 Max upload audio size of 150 kb, but will not apply for audio if too big!\n\nPasscode\n\n\u2022 Customize passcode keys\n\u2022 Import passcode keys files (.passthm) from TrollTools\n\nLocks\n\n\u2022 Importing locks from TrollLock\n\u2022 Custom number of frames + custom animation speeds (see below)\n\nExplore\n\n\u2022 Find and download themes for passcodes, locks, and app icons!\n\u2022 If you would like to submit your own works, please join the discord\n\nStatus Bar\n\n\u2022 Change carrier name\n\u2022 Change battery display detail\n\u2022 Change time text\n\u2022 Change breadcrumb text\n\u2022 Show numeric WiFi/Cellular strength\n\u2022 Hide many icons in the status bar\n\nOther Tools\n\n\u2022 Custom Fonts\n\u2022 Lock Screen Footnote\n\u2022 Notification Badges Changer (iOS 14-15 ONLY)\n\u2022 Springboard Colors\n\u2022 Settings App Customizer\n\u2022 Calculator Error Message\n\nMisc\n\n\u2022 Disable shortcut banners\n\u2022 Turn shortcuts into app clips\n\u2022 Supervise Device Warning: Use the features below at your own risk!\n\u2022 Change system version (shows in settings, iOS 15+)\n\u2022 Enable iPhone X Gestures\n\u2022 Enable Dynamic Island (iOS 16+)\n\nExtra Tools\n\n\u2022 Lock Screen Footnote\n\u2022 No Lock On Respring\n\u2022 Disable Low Power Alert",
+            "iconURL": "https://user-images.githubusercontent.com/52459150/215552092-9dc1e029-da35-43da-867f-17279e3dc180.png",
+            "tintColor": "0d6425",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Home.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Tools.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/SpringboardTools.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Audio_Changer.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Passcode_Editor.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/LS_Footnote.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Misc.PNG",
+                "https://github.com/leminlimez/Cowabunga/raw/main/Images/Extra_Tools.PNG"
+            ],
+            "version": "10.2.0",
+            "minOSVersion_0": "14.0.0",
+            "maxOSVersion_0": "16.1.2",
+            "versionDate": "2023-05-14",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Cowabunga.v10.2.0.ipa",
+            "versionDescription": "\u2022 Added JIT\n\u2022 Added date in status bar through breadcrumb\n\u2022 Can be automated through shortcuts using the url cowabunga://dateset\n\u2022 See below for how to set up automation\n\u2022 Can also be updated using the button on the home page\n\u2022 Added service badge customization in status bar\n\u2022 Added ability to set the data network type\n\u2022 Added changing the date string on ipads\n\u2022 Added ability to reset the status bar through a url scheme (cowabunga://statusbar:reset)\n\u2022 Added ability to choose respring type (frontboard or backboard)\n\u2022 Fixed issue with forcing mdc",
+            "size": 15500000,
+            "versions": [
+                {
+                    "version": "10.2.0",
+                    "minOSVersion": "14.0.0",
+                    "maxOSVersion_0": "16.1.2",
+                    "date": "2023-05-14",
+                    "localizedDescription": "\u2022 Added JIT\n\u2022 Added date in status bar through breadcrumb\n\u2022 Can be automated through shortcuts using the url cowabunga://dateset\n\u2022 See below for how to set up automation\n\u2022 Can also be updated using the button on the home page\n\u2022 Added service badge customization in status bar\n\u2022 Added ability to set the data network type\n\u2022 Added changing the date string on ipads\n\u2022 Added ability to reset the status bar through a url scheme (cowabunga://statusbar:reset)\n\u2022 Added ability to choose respring type (frontboard or backboard)\n\u2022 Fixed issue with forcing mdc",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Cowabunga.v10.2.0.ipa",
+                    "size": 15500000
+                },
+                {
+                    "version": "10.1.1",
+                    "minOSVersion": "14.0.0",
+                    "maxOSVersion_0": "16.1.2",
+                    "date": "2023-04-01",
+                    "localizedDescription": "\u2022 Added remove 3 app limit\n\u2022 Added ability to edit secondary carrier name separately\n\u2022 Importing operations no longer includes the backup file for changes in /var for safety reasons (Model Name Changer and other operations that edit the mobilegestalt plist should no longer brick devices/cause activation locks)\n\u2022 Fixed generate padding button not showing up on file path operations",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Cowabunga.v10.1.1.ipa",
+                    "size": 20600000
+                },
+                {
+                    "version": "10.1.0",
+                    "minOSVersion": "14.0.0",
+                    "maxOSVersion_0": "16.1.2",
+                    "localizedDescription": "\u2022 You can now choose to enable v8 and/or v10 theming\n\u2022 Padding for file path replacing operations\n\u2022 Added back keyboard buttons audio\n\u2022 More safety with icon theming: first attempts to revert corrupted files before aborting\n\u2022 Improved error messages\n\u2022 Fixed springboard tools view sizing on ipads\n\u2022 Fixed springboard tools on RTL languages\n\u2022 Updated backend repo for explore page",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Cowabunga.v10.1.0.ipa",
+                    "date": "2023-03-29",
+                    "size": 20600000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "ESign",
+            "bundleIdentifier": "p3.xyz.yyyue.esign",
+            "developerName": "esign.yyyue.xyz",
+            "subtitle": "IPA Self Signer, Tweak Injector, File Manager",
+            "localizedDescription": "Easy Sign (esign) is a tool that can sign IPA files without a jailbreak and is capable of injecting libraries, removing libraries, and so on.",
+            "iconURL": "https://static.appdb.to/images/cydia-1900000897-icon-1651011412.png",
+            "tintColor": "356ead",
+            "category": "utilities",
+            "screenshotURLs": [
+                "https://static.appdb.to/images/cydia-1900000897-iphone-0-1670149926.png",
+                "https://static.appdb.to/images/cydia-1900000897-iphone-1-1670149926.png",
+                "https://static.appdb.to/images/cydia-1900000897-iphone-2-1670149927.png",
+                "https://static.appdb.to/images/cydia-1900000897-iphone-3-1670149927.png"
+            ],
+            "version": "4.8.1",
+            "minOSVersion": "11.0",
+            "versionDate": "2023-03-19",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.8.1.ipa",
+            "versionDescription": "\u2022 ESign updated to v4.8.1\n\u2022 The list of installed applications supports filtering",
+            "size": 8750000,
+            "versions": [
+                {
+                    "date": "2023-03-19",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.8.1.ipa",
+                    "localizedDescription": "\u2022 ESign updated to v4.8.1\n\u2022 The list of installed applications supports filtering",
+                    "minOSVersion": "11.0",
+                    "size": 8750000,
+                    "version": "4.8.1"
+                },
+                {
+                    "date": "2023-03-10",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.7.8.ipa",
+                    "localizedDescription": "\u2022 ESign updated to v4.7.8\n\u2022 Support Remove mobileprovision after signing\n\u2022 Support clear app data (iOS15-15.7.1 and 16.0-16.1.2)\n\u2022 Fixed bugs",
+                    "minOSVersion": "11.0",
+                    "size": 8830000,
+                    "version": "4.7.8"
+                },
+                {
+                    "date": "2023-02-20",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.7.7.3.ipa",
+                    "localizedDescription": "\u2022 ESign updated to v4.7.6\n\u2022 Support backup and restore application data (iOS15-15.7.1 and 16.0-16.1.2)\n\u2022 Fix bugs",
+                    "minOSVersion": "11.0",
+                    "size": 10800000,
+                    "version": "4.7.7.3"
+                },
+                {
+                    "date": "2023-02-20",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.7.6.ipa",
+                    "localizedDescription": "\u2022 ESign updated to v4.7.6",
+                    "minOSVersion": "11.0",
+                    "size": 8200000,
+                    "version": "4.7.6"
+                },
+                {
+                    "date": "2023-02-10",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/ESign.v4.7.5.ipa",
+                    "localizedDescription": "\u2022 ESign updated to v4.7.5",
+                    "minOSVersion": "11.0",
+                    "size": 8200000,
+                    "version": "4.7.5"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Atrasis",
+            "bundleIdentifier": "com.supercell.magic",
+            "developerName": "Atrasis Team",
+            "subtitle": "A modded Clash of Clans server!",
+            "localizedDescription": "This is a modded Clash of Clans private server. You have unlimited gems, elixir and gold. Write /help in the Global Chat for comands.\n\nNOTE: IF THE APP REQUIRES AN UPDATE, REINSTALL FROM THIS LINK AS THE DOWNLOAD URL IS ALWAYS THE LATEST AND I DO NOT MANUALLY CHANGE IT.\n\nTO KEEP YOUR PROGRESS, MAKE AN ATRASIS ID, ITS DONE THE SAME AS IF YOU ARE MAKING A SUPERCELL ID, AND SIGN IN AFTER REINSTALLING\n\n\nPlease keep in mind that this mod is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it.\n\nModded by Ksyrex. His Telegram group\u27a1\ufe0f https://t.me/+wwYy4wEMS1gwMTAy",
+            "iconURL": "https://i.imgur.com/WfWpKOF.png",
+            "tintColor": "9e6193",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-1.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-2.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-3.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-4.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-5.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-6.webp",
+                "https://img.ipa4fun.com/cc/d5/84/529479190-screenshot-7.webp"
+            ],
+            "version": "latest",
+            "versionDate": "2024-05-10",
+            "downloadURL": "https://atrasisclash.net/server-original-ios-download-ipa.php",
+            "versionDescription": "\u2022 Link now only installs latest version.",
+            "size": 277000000,
+            "beta": false
+        },
+        {
+            "name": "Null's Royale",
+            "bundleIdentifier": "com.supercell.scroll",
+            "developerName": "Null",
+            "subtitle": "A modded Clash Royale server!",
+            "localizedDescription": "Looking for free gems, gold and resources on Clash Royale? Null's Royale can make it happen for you.\n\n\u2022 Unlock all cards - You can get all cards in Clash Royale for free now, including custom cards in challenges.\n\n\u2022 Unlimited resources -  No more worries about using up all the gems and gold in Clash Royale. You can get unlimited amount of these resources now.\n\n\u2022 Battle withe real players - Have fun competing with real players online in pvp mode with stable network.",
+            "iconURL": "https://i.imgur.com/ZDQVF7n.jpeg",
+            "tintColor": "092949",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-1.webp",
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-2.webp",
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-3.webp",
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-4.webp",
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-5.webp",
+                "https://img.ipa4fun.com/e8/16/53/1053012308-screenshot-6.webp"
+            ],
+            "version": "4.88.4",
+            "versionDate": "2024-05-10",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Clash.Royale.v4.88.4.Nulls.ipa",
+            "versionDescription": "\u2022 Updated Clash Royale to v4.88.4",
+            "size": 329000000,
+            "versions": [
+                {
+                    "date": "2024-05-10",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Clash.Royale.v4.88.4.Nulls.ipa",
+                    "localizedDescription": "\u2022 Updated Clash Royale to v4.88.4",
+                    "size": 329000000,
+                    "version": "4.88.4"
+                },
+                {
+                    "date": "2023-05-11",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Clash.Royale.Null.s.v3.3186.7.ipa",
+                    "localizedDescription": "\u2022 Updated Clash Royale to v3.3186.7",
+                    "size": 234000000,
+                    "version": "3.3186.7"
+                },
+                {
+                    "date": "2023-04-06",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Clash.Royale.v3.3074.6.ipa",
+                    "localizedDescription": "\u2022 Updated Clash Royale to v3.3074.6",
+                    "size": 160000000,
+                    "version": "3.3074.6"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Angry Birds Space",
+            "bundleIdentifier": "com.rovio.AngryBirdsSpace",
+            "developerName": "Rovio",
+            "subtitle": "Removed from the App Store!",
+            "localizedDescription": "The #1 mobile game of all time blasts off into space!\n\nPlay over 300 interstellar levels across 10 planets \u2013 including our very own Solar System!\n\nWhether it\u2019s the icy orbs of Cold Cuts, the volcanic explosiveness of Red Planet, Utopia \u2013 a planet made entirely of junk food, or even our own Solar System, each episode offers intergalactic fun at every turn! And the low-gravity environment of space results in spectacular gameplay ranging from slow-motion puzzles to lightspeed destruction. With brand new birds, special abilities, and a whole galaxy to explore, the sky is no longer the limit!\n\n-----\n\n\u201cIntergalactic phenomenon worth every penny\u201d \u2013 AppCraver\n\n\u201cTakes the fundamental physics-based flinging of the original and turns it on its head... It's satisfying, yet completely familiar, and is heaps of pig-smashing fun.\u201d \u2013 Gamespot\n\n\u201cAnyone burnt out on vanilla bird flinging will enjoy the game's out-of-this-world adventure.\u201d -- IGN\n\n-----\n\n- Over 300 interstellar levels!\n- New playable characters!\n- Unique special abilities for each bird!\n- Zero-gravity space adventures!\n- Trick shots using planets\u2019 gravity!\n- Hidden bonus levels!\n- Beautifully detailed backgrounds!\n- Daily Missions!\n\n-----\n\nJoin the global phenomenon as it goes galactic!\n\nBecome a fan of Angry Birds on Facebook:\nhttp://facebook.angrybirds.com\n\nFollow us on Twitter:\nhttp://twitter.angrybirds.com\n\nTerms of Use: https://www.rovio.com/terms-of-service\nPrivacy Policy: https://www.rovio.com/privacy\n\nThis application may require internet connectivity and subsequent data transfer charges may apply.\n\n\nImportant Message for Parents\n\nThis game may include:\n- Direct links to social networking websites that are intended for an audience over the age of 13.\n- Direct links to the internet that can take players away from the game with the potential to browse any web page.\n- Advertising of Rovio products and also products from select partners.\n- The option to make in-app purchases. The bill payer should always be consulted beforehand.",
+            "iconURL": "https://img.ipa4fun.com/63/2d/06/501968250-logo.webp",
+            "tintColor": "06253f",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-1.webp",
+                "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-2.webp",
+                "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-3.webp",
+                "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-4.webp",
+                "https://img.ipa4fun.com/c2/46/8a/499511971-screenshot-5.webp"
+            ],
+            "version": "2.2.13",
+            "versionDate": "2018-05-25",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa",
+            "versionDescription": "\u2022 We addressed some minor issues in order to improve the user experience.",
+            "size": 49900000,
+            "versions": [
+                {
+                    "date": "2018-05-25",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Space.v2.2.13.ipa",
+                    "localizedDescription": "\u2022 We addressed some minor issues in order to improve the user experience.",
+                    "size": 49900000,
+                    "version": "2.2.13"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Angry Birds Star Wars",
+            "bundleIdentifier": "com.rovio.angrybirdsstarwars",
+            "developerName": "Rovio",
+            "subtitle": "Removed from the App Store!",
+            "localizedDescription": "JOIN THE ANGRY BIRDS IN THEIR BIGGEST ADVENTURE YET!\n\nA long time ago in a galaxy far, far away... a group of desperate rebel birds faced off against a galactic menace: the Empire\u2019s evil Pigtroopers!\n\nRebel birds, striking from a hidden base, have won their first victory against the evil Imperial Pigs. During the battle, Rebel spies managed to steal secret plans to the Empire\u2019s ultimate weapon, the PIG STAR, and are racing to deliver the plans to the Rebel Birds. Now they need your help!\n\nJoin an epic adventure with the Angry Birds in the legendary Star Wars\u2122 universe! Use the Force, wield your lightsaber, and blast away Pigtroopers on an intergalactic journey from the deserts of Tatooine to the depths of the Pig Star -- where you\u2019ll face off against the terrifying Darth Vader, Dark Lord of the Pigs! Can you become a Jedi Master and restore freedom to the galaxy?\n\nTime to grab your lightsaber and join the adventure! May the birds be with you!\n\nHOURS AND HOURS OF ENGAGING GAMEPLAY - Explore more than 100 levels in iconic locations like Tatooine and the Pig Star. Can you dodge Imperial pigs, laser turrets, Tusken Raider pigs, and the dark side of the Force to get all three stars?\n\nNEW GAMEPLAY MECHANICS - Use lightsabers, Blasters and Jedi powers to wreak havoc on the Imperial Pigs!\n\nLEVEL UP YOUR BIRDS - Keep playing and level up your birds to improve their skills!\n\nSECRETS AND HIDDEN GOODIES - Can you unlock all the R2-D2 and C-3PO bonus levels?\n\nFREE UPDATES - This is only the beginning of the epic saga!\n\nTHE MIGHTY FALCON\nStuck on a tricky level? Earn stars and call the Mighty Falcon to rain down the destruction. New goals, achievements and gameplay!\n\nPATH OF THE JEDI\nThe ultimate training ground for a Young Jedi, this episode features 40 Dagobah Challenge Levels with Jedi Master Yoda! Master the Path of the Jedi to unlock the ultimate Lightsaber! Available as an in-app purchase, or by earning three stars on every level.\n\nFollow @angrybirds on Twitter\n\nWatch the videos, read the comics and submit fan art at angrybirds.com/starwars\n\nLike us at facebook.com/angrybirds and say hello!\n\nTerms of Use: https://www.rovio.com/terms-of-use\nPrivacy Policy: https://www.rovio.com/privacy\n\nThis application may require internet connectivity and subsequent data transfer charges may apply.\n\n\nImportant Message for Parents\n\nThis game may include:\n- Direct links to social networking websites that are intended for an audience over the age of 13.\n- Direct links to the internet that can take players away from the game with the potential to browse any web page.\n- Advertising of Rovio products and also products from select partners.\n- The option to make in-app purchases. The bill payer should always be consulted beforehand.",
+            "iconURL": "https://img.ipa4fun.com/56/fa/23/557138109-logo.webp",
+            "tintColor": "082448",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/5d/50/b0/557137623-screenshot-1.webp",
+                "https://img.ipa4fun.com/5d/50/b0/557137623-screenshot-2.webp",
+                "https://img.ipa4fun.com/5d/50/b0/557137623-screenshot-3.webp",
+                "https://img.ipa4fun.com/5d/50/b0/557137623-screenshot-4.webp",
+                "https://img.ipa4fun.com/5d/50/b0/557137623-screenshot-5.webp"
+            ],
+            "version": "1.5.12",
+            "versionDate": "2018-05-25",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa",
+            "versionDescription": "\u2022 We addressed some minor issues in order to improve the user experience.",
+            "size": 58200000,
+            "versions": [
+                {
+                    "date": "2018-05-25",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Angry.Birds.Star.Wars.v1.5.12.ipa",
+                    "localizedDescription": "\u2022 We addressed some minor issues in order to improve the user experience.",
+                    "size": 58200000,
+                    "version": "1.5.12"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Pokemon Go (w/ SpooferPro)",
+            "bundleIdentifier": "com.nianticlabs.pokemongo",
+            "developerName": "SpooferPro Team",
+            "subtitle": "Pokemon Go injected with SpooferPro",
+            "localizedDescription": "SpooferPro for POGO - iOS GPS Spoofer\n\nWith the tools from our Tweak, you can level up faster and catch the best Pokemon anywhere in the World.",
+            "iconURL": "https://is4-ssl.mzstatic.com/image/thumb/Purple116/v4/5e/8f/0e/5e8f0e6c-3478-3bff-c4ad-03f543322688/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+            "tintColor": "184f99",
+            "category": "Games",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-1.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-2.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-3.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-4.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-5.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-6.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-7.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-8.webp",
+                "https://img.ipa4fun.com/54/5c/d2/1094591345-screenshot-9.webp"
+            ],
+            "version": "0.269.1",
+            "versionDate": "2023-05-11",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa",
+            "versionDescription": "\u2022 Updated Pokemon Go to v0.269.1",
+            "size": 118000000,
+            "versions": [
+                {
+                    "date": "2023-05-11",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Pokemon.Go.v0.269.1.+.SpooferPro.v0.148.ipa",
+                    "localizedDescription": "\u2022 Updated Pokemon Go to v0.269.1",
+                    "size": 118000000,
+                    "version": "0.269.1"
+                },
+                {
+                    "date": "2023-04-04",
+                    "downloadURL": "https://cdn.spooferpro.com/SpooferPro-0.265.0-0.137.ipa",
+                    "localizedDescription": "\u2022 Updated Pokemon Go to v0.265.0",
+                    "size": 115000000,
+                    "version": "0.265.0"
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "HD Flix (No Ads)",
+            "bundleIdentifier": "com.box.hd.flix.drama.hub",
+            "developerName": "Dezokr",
+            "subtitle": "The All-In-One Movie app for iOS",
+            "localizedDescription": "WHEN YOU FIRST OPEN THE APP IT WILL LOOK LIKE A DIFFERENT APP JUST WAIT AND IT WILL CHANGE TO THE MOVIE APP\n\nWith HD Flix for iOS you can able to watch any movie/tv show. The User Interface that you see in the app is truly the best thing about it. Easy navigation and responsive design made it stand at the top of the list.\n\nIt will display all the trending content from Action, Comedy, Sci-Fi and other genres at the home page for the best user experience. Moreover, you will get to read the complete information about any particular movie including IMDB Rating, Year Of Release, Start Cast, etc.",
+            "iconURL": "https://i.imgur.com/3tQFB9N.png",
+            "tintColor": "a01916",
+            "category": "Entertainment",
+            "screenshotURLs": [
+                "https://i.imgur.com/MKWusvU.png"
+            ],
+            "version": "2.0",
+            "versionDate": "2025-03-10",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa",
+            "versionDescription": "\u2022 Updated HD Flix to v2.0",
+            "size": 2800000,
+            "versions": [
+                {
+                    "version": "2.0",
+                    "date": "2025-03-10",
+                    "localizedDescription": "\u2022 Updated HD Flix",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.No.Ads.v2.0.ipa",
+                    "size": 2800000
+                },
+                {
+                    "version": "1.0",
+                    "date": "2024-05-11",
+                    "localizedDescription": "\u2022 Added HD Flix v5.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/HD.Flix.v5.0.ipa",
+                    "size": 2940000
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.security.application-groups",
+                    "com.apple.developer.associated-domains",
+                    "com.apple.developer.driverkit.allow-third-party-userclients",
+                    "com.apple.developer.healthkit.background-delivery",
+                    "com.apple.developer.ubiquity-container-identifiers",
+                    "com.apple.developer.user-fonts",
+                    "com.apple.developer.usernotifications.communication",
+                    "com.apple.developer.usernotifications.time-sensitive",
+                    "com.apple.developer.game-center",
+                    "com.apple.developer.healthkit.recalibrate-estimates",
+                    "com.apple.developer.healthkit",
+                    "com.apple.developer.homekit",
+                    "com.apple.developer.networking.HotspotConfiguration",
+                    "com.apple.developer.icloud-container-development-container-identifiers",
+                    "com.apple.developer.icloud-container-identifiers",
+                    "com.apple.developer.ubiquity-kvstore-identifier",
+                    "com.apple.developer.icloud-services",
+                    "com.apple.developer.networking.networkextension",
+                    "com.apple.developer.pass-type-identifiers",
+                    "com.apple.developer.networking.vpn.api",
+                    "aps-environment",
+                    "com.apple.developer.healthkit.access",
+                    "com.apple.developer.applesignin",
+                    "com.apple.developer.siri",
+                    "com.apple.developer.weatherkit",
+                    "keychain-access-groups"
+                ],
+                "privacy": {
+                    "NSCameraUsageDescription": "App uses the camera for capturing photos or videos.",
+                    "NSLocationWhenInUseUsageDescription": "App uses location when on app.",
+                    "NSMicrophoneUsageDescription": "App uses the microphone to record audio.",
+                    "NSPhotoLibraryUsageDescription": "App accesses the user's photo library.",
+                    "NSUserTrackingUsageDescription": "App tracks user activity for advertising purposes."
+                }
+            },
+            "beta": false
+        },
+        {
+            "name": "X++",
+            "bundleIdentifier": "com.atebits.Tweetie2",
+            "developerName": "Densor",
+            "subtitle": "An new tweak for X!",
+            "localizedDescription": "Features:\n\n\u2022 Download Videos (even if account private).\n\u2022 Replay later feature.\n\u2022 Video zoom feature.\n\u2022 No history feature.\n\u2022 Hide topics tweet feature.\n\u2022 Disable video layer caption.\n\u2022 Padlock.\n\u2022 Font changer.\n\u2022 Auto load photos in highest quality feature\n\u2022 Undo tweet feature.\n\u2022 Reader mode feature.\n\u2022 Disable new tweet style (A.K.A edge to edge tweet)\n\u2022 Enable voice tweet and voice message in DM.\n\u2022 Hide promoted tweet from the timeline.\n\u2022 Confirm alert when hit the tweet button.\n\u2022 Confirm alert when hit like button.\n\u2022 FLEX for debugging.\n\n\u2022 And more!",
+            "iconURL": "https://i.imgur.com/HjyhiOC.jpeg",
+            "tintColor": "030303",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/fe/b5/38/333903271-screenshot-1.webp",
+                "https://img.ipa4fun.com/fe/b5/38/333903271-screenshot-2.webp",
+                "https://img.ipa4fun.com/fe/b5/38/333903271-screenshot-3.webp",
+                "https://img.ipa4fun.com/fe/b5/38/333903271-screenshot-4.webp",
+                "https://img.ipa4fun.com/fe/b5/38/333903271-screenshot-5.webp"
+            ],
+            "version": "10.83",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v10.83.+.TwiGalaxy.v1.1.ipa",
+            "versionDescription": "\u2022 Updated X to v10.83\n\u2022 Replaced BHTwitter with TwiGalaxy",
+            "size": 119000000,
+            "versions": [
+                {
+                    "version": "10.83",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated X to v10.83\n\u2022 Replaced BHTwitter with TwiGalaxy",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/X.v10.83.+.TwiGalaxy.v1.1.ipa",
+                    "size": 119000000
+                },
+                {
+                    "version": "10.62",
+                    "date": "2024-10-09",
+                    "localizedDescription": "\u2022 Updated X to v10.62\n\u2022 Updated BHTwitter to v4.3-4",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Twitter.v10.62.+.BHTwitter.v4.3-4.ipa",
+                    "size": 119000000
+                },
+                {
+                    "version": "10.39.0",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated X to v10.39.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Twitter.v10.39.+.BHX.v4.3.ipa",
+                    "size": 93000000
+                },
+                {
+                    "version": "10.22.0",
+                    "date": "2024-01-07",
+                    "localizedDescription": "\u2022 Updated X to v10.22.0",
+                    "downloadURL": "https://starfilesdl.com/file/m1rSEUEHz83q?fpdi_ticket=RXgrRkx5dHhGcmJrcFVtVVh4VmtaZE1VdHZLN0trTng2SUY3NTdWekErY2wwOTYwMlBYRUJvMFJKVjlqLyszWXQ1d2pxeHhhc2dJQVBRQ28zSDFVUXdqYTRSMXlDajcySmxBcG9lRlZYVnVxaDA1ZWxsNjJnWCtSNlFqWVpXdmNDZWJBNFpmY3VZZVNGa1BsRFYyQ01nPT0%3D",
+                    "size": 93000000
+                },
+                {
+                    "version": "10.10.0",
+                    "date": "2023-10-19",
+                    "localizedDescription": "\u2022 Updated X to v10.10.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Twitter.X.v10.10.+.BHX.v4.0.ipa",
+                    "size": 93000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Facebook++",
+            "bundleIdentifier": "com.facebook.Facebook",
+            "developerName": "Michael Lema",
+            "subtitle": "Facebook with a number of new features!",
+            "localizedDescription": "Facebook Wolf brings a number of new features to Facebook such as:\n\nUser\n\u2022 Disable marking messages as seen\n\u2022 Disable typing status in messages\n\u2022 No feed ads\n\nStory\n\u2022 Disable marking stories\n\u2022 Disable auto-advance in stories\n\u2022 Save Story images and videos\n\u2022 No story ads (Not working)\n\nFeed\n\u2022 Save Feed videos by long-pressing the video\n\nAnd more!",
+            "iconURL": "https://img.ipa4fun.com/92/c2/a0/284882215-logo.webp",
+            "tintColor": "0c63f9",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-1.webp",
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-2.webp",
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-3.webp",
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-4.webp",
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-5.webp",
+                "https://img.ipa4fun.com/92/c2/a0/284882215-screenshot-6.webp"
+            ],
+            "version": "502.2.0",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v502.2.0.+.Wolf.v2.1.ipa",
+            "versionDescription": "\u2022 Updated Facebook to v502.2.0",
+            "size": 137000000,
+            "versions": [
+                {
+                    "version": "502.2.0",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated Facebook to v502.2.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v502.2.0.+.Wolf.v2.1.ipa",
+                    "size": 137000000
+                },
+                {
+                    "version": "461.0.3",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated Facebook to v461.0.3",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v461.0.3.+.Wolf.v2.1.ipa",
+                    "size": 137000000
+                },
+                {
+                    "version": "438.2",
+                    "date": "2024-01-07",
+                    "localizedDescription": "\u2022 Updated Facebook to v438.2",
+                    "downloadURL": "https://starfilesdl.com/file/ifrp2geRDxVH?fpdi_ticket=RXgrRkx5dHhGcmJrcFVtVVh4VmtaUkVlN3hwYmJ3b1dibXNIUDNMLzdzTEthQXRjdFh3WlNWUXBaTXhiMVp1cHVHcDZNZlRpa1lxZ21nZEZmODFqdVljT3I2T0JweDZoODFpN0hOZG12TThwdUNac29ZNm5XZVNUakNrVmlwOEdJSnh5RHV1MEE3d0d4ajJsbGNGanpnPT0%3D",
+                    "size": 133000000
+                },
+                {
+                    "version": "435.2",
+                    "date": "2023-10-19",
+                    "localizedDescription": "\u2022 Updated Facebook to v435.2",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Facebook.v435.2.+.Wolf.v2.1.ipa",
+                    "size": 133000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "TikTok++",
+            "bundleIdentifier": "com.zhiliaoapp.musically",
+            "developerName": "aJBbo",
+            "subtitle": "TikTok with added features.",
+            "localizedDescription": "AC - An awesome tweak for TikTok!\n\nFeatures:\n\n\u2022 No Ads\n\u2022 Download Videos\n\u2022 Download Musics\n\u2022 Show/Hide UI button\n\u2022 Copy video decription\n\u2022 Copy video link\n\u2022 Copy Music link\n\u2022 Auto Play Next Video\n\u2022 Show progress bar\n\u2022 Confirm like\n\u2022 Confirm comment like\n\u2022 Confirm comment dislike\n\u2022 Confirm follow\n\u2022 Save profile image\n\u2022 Copy profile information\n\u2022 Extend bio\n\u2022 Extend comment\n\u2022 Always open in Safari\n\u2022 Changing region\n\u2022 Fake verify blue mark\n\u2022 Fake Follower count\n\u2022 Fake Following count\n\u2022 Padlock",
+            "iconURL": "https://img.ipa4fun.com/06/ac/ac/835599320-logo.webp",
+            "tintColor": "0b0b0b",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://i.imgur.com/PMPlQVa.jpeg",
+                "https://i.imgur.com/YN0hG8M.jpeg",
+                "https://i.imgur.com/pmXZBpB.jpeg",
+                "https://i.imgur.com/bia0rue.jpeg",
+                "https://i.imgur.com/tJtEO1r.jpeg"
+            ],
+            "version": "38.7.0",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa",
+            "versionDescription": "\u2022 Updated TikTok to v38.7.0\n\u2022 Replaced BHTikTok with AC",
+            "size": 226000000,
+            "versions": [
+                {
+                    "version": "38.7.0",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated TikTok to v38.7.0\n\u2022 Replaced BHTikTok with AC",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa",
+                    "size": 226000000
+                },
+                {
+                    "version": "32.2.0",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated TikTok to v32.2.0\n\u2022 Replaced TikTokLRD with BHTikTok",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v32.2.0.+.BH+.v2.3.ipa",
+                    "size": 226000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Instagram++",
+            "bundleIdentifier": "com.burbn.instagram",
+            "developerName": "Fouad Raheb",
+            "subtitle": "A must-have tweak for Instagram users!",
+            "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n\u2022 Download posts (Videos and Photos)\n\u2022 Repost posts (Videos and Photos)\n\u2022 Long press on posts to zoom\n\u2022 Copy text captions from posts\n\nStories\n\u2022 Save stories to Camera Roll\n\u2022 View stories anonymously\n\u2022 Manually mark stories as seen\n\u2022 Mute and unmute video stories\n\u2022 Upload from Camera Roll (Swipe up)\n\u2022 Disable auto switch between stories\n\u2022 Hide stories bar from feed\n\nProfile\n\u2022 Show if other users follow you\n\u2022 Long press on profile image to zoom\n\u2022 Show exact value of numerical stats\n\nDirect Messages\n\u2022 Disable read receipts\n\u2022 Save messaged stories to Camera Roll\n\u2022 Disable screenshot detection in stories\n\nSpoofing (Local Only)\n\u2022 Verify your profile\n\u2022 Followers count\n\u2022 Following count\n\u2022 Uploads count\n\nAnd More!",
+            "iconURL": "https://img.ipa4fun.com/ab/4f/56/389801252-logo.webp",
+            "tintColor": "d111c9",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/ab/4f/56/389801252-screenshot-1.webp",
+                "https://img.ipa4fun.com/ab/4f/56/389801252-screenshot-2.webp",
+                "https://img.ipa4fun.com/ab/4f/56/389801252-screenshot-3.webp",
+                "https://img.ipa4fun.com/ab/4f/56/389801252-screenshot-4.webp",
+                "https://img.ipa4fun.com/ab/4f/56/389801252-screenshot-5.webp"
+            ],
+            "version": "356.1.0",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v356.1.0.+.Regram.B15.Cracked.ipa",
+            "versionDescription": "\u2022 Updated Instagram to v320.0.4",
+            "size": 117000000,
+            "versions": [
+                {
+                    "version": "356.1.0",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated Instagram to v356.1.0\n\u2022 Replaced old instagram tweak with Regram",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v356.1.0.+.Regram.B15.Cracked.ipa",
+                    "size": 117000000
+                },
+                {
+                    "version": "310.0.4",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated Instagram to v320.0.4",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v310.0.4.+.Rocket+.v3.8.18.+.Plus+.v2.5.0K.ipa",
+                    "size": 117000000
+                },
+                {
+                    "version": "301.1",
+                    "date": "2023-10-19",
+                    "localizedDescription": "\u2022 Updated Instagram to v303.1",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Instagram.v301.1.+.Rocket.v3.8.13K.+.Plus.v2.5.0K.ipa",
+                    "size": 107000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "MyFitnessPal++",
+            "bundleIdentifier": "com.myfitnesspal.mfp",
+            "developerName": "Strejda603",
+            "subtitle": "MyFitnessPal With Premium Activated.",
+            "localizedDescription": "\u2022 Premium Features Enabled\n\nTrack progress toward your nutrition, water, fitness, and weight loss goals with MyFitnessPal. This all-in-one food tracker and health app is like having a nutrition coach, meal planner, and food diary with you at all times.\n\nMyFitnessPal isn't another restrictive diet app. This is a health app to help you learn about your habits u2026 see how you eat u2026 make smarter food choices u2026 find motivation & support ... and conquer your health goals.",
+            "iconURL": "https://img.ipa4fun.com/33/7a/25/341232718-logo.webp",
+            "tintColor": "0463ea",
+            "category": "Lifestyle",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-1.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-2.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-3.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-4.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-5.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-6.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-7.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-8.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-9.webp",
+                "https://img.ipa4fun.com/33/7a/25/341232718-screenshot-10.webp"
+            ],
+            "version": "25.8.0",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.v25.8.0.Cracked.ipa",
+            "versionDescription": "\u2022 Updated MyFitnessPal to v25.8.0",
+            "size": 76600000,
+            "versions": [
+                {
+                    "version": "25.8.0",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated MyFitnessPal to v25.8.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.v25.8.0.Cracked.ipa",
+                    "size": 76600000
+                },
+                {
+                    "version": "23.24.5",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated MyFitnessPal to v23.24.5",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.Cracked.v23.24.5.ipa",
+                    "size": 76600000
+                },
+                {
+                    "version": "23.20.5",
+                    "date": "2023-10-21",
+                    "localizedDescription": "\u2022 Updated MyFitnessPal to v23.20.5",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.Cracked.v23.20.5.ipa",
+                    "size": 76600000
+                },
+                {
+                    "version": "23.6.5",
+                    "date": "2023-04-06",
+                    "localizedDescription": "\u2022 Updated MyFitnessPal to v23.6.5",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/MyFitnessPal.Cracked.v23.6.5.ipa",
+                    "size": 53561262
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "BeReal++",
+            "bundleIdentifier": "AlexisBarreyat.BeReal",
+            "developerName": "Yandevelop",
+            "subtitle": "See your friends BeReals without posting anything!",
+            "localizedDescription": "Tap the \u201cBeReal+\u201d text (It may be blank) at the top of the screen to upload BeReals from the camera roll\n\nView BeReals without posting your own\n\u2022 Upload BeReals from the camera roll:\n\t- Post on time, even if you're posting late\n\t- Set a custom location\n\t- Set a custom retake count\n\t- Add what you're currently playing or add a song\n\u2022 Download BeReals",
+            "iconURL": "https://img.ipa4fun.com/74/cd/6c/1459645446-logo.webp",
+            "tintColor": "0b0b0b",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-1.webp",
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-2.webp",
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-3.webp",
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-4.webp",
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-5.webp",
+                "https://img.ipa4fun.com/74/cd/6c/1459645446-screenshot-6.webp"
+            ],
+            "version": "2.14.2",
+            "versionDate": "2024-10-09",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v2.14.2.+.Bea.v1.3.8.ipa",
+            "versionDescription": "\u2022 Updated BeReal to v2.14.2\n\u2022 Updated Bea to v1.3.8",
+            "size": 63800000,
+            "versions": [
+                {
+                    "version": "2.14.2",
+                    "date": "2024-10-09",
+                    "localizedDescription": "\u2022 Updated BeReal to v2.14.2\n\u2022 Updated Bea to v1.3.8",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v2.14.2.+.Bea.v1.3.8.ipa",
+                    "size": 63800000
+                },
+                {
+                    "version": "2.13.1",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Updated BeReal to v2.13.1\n\u2022 Updated Bea to v1.3.6",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v2.13.1.+.Bea.v1.3.6.ipa",
+                    "size": 35700000
+                },
+                {
+                    "version": "1.15.0",
+                    "date": "2023-10-21",
+                    "localizedDescription": "\u2022 Updated BeReal to v1.15.0\n\u2022 Updated Bea to v1.3.2",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v1.15.0.+.Bea.v1.3.2.ipa",
+                    "size": 29200000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Deezer++",
+            "bundleIdentifier": "com.deezer.Deezer",
+            "developerName": "iJulioVerne",
+            "subtitle": "Deezer with premium activated!",
+            "localizedDescription": "Deezer is a music streaming platform that enables you to match The Power of Music to your lifestyle and identity.\n\nEnjoy a massive music catalog that has everything and more with in-built algorithms that learn what you like and recommend more of it. The Deezer music player is your companion across all devices, providing access to the artists, songs and communities that speak to you. Discover and create playlists in your favorite genres: hip hop, rap, rock, lofi. No WiFi needed \u2014 download songs and enjoy offline music \u2014 perfect for when at home or on the go.\n\nThis is the most personalized and intuitive listening experience, brought to you from the home of music.\n\nWith Deezer Free*, you'll get all you need in one app:\n\n\u2022 Flow, our feature for infinite, personalized mixes (on-point recommendations every time)\n\u2022 SongCatcher, for identifying any song playing around you (try singing or humming for magic results)\n\u2022 Game on with music quiz (see how fast you can guess your favorite song)\n\u2022 A ludicrously-large catalog (go on, try to find a song that isn't there)\n\u2022 The freedom to play music based on moods, niche genres and scenes\n\u2022 Personal and collaborative playlists, favorites, radio* and more\n\u2022 Dive deeper into the music with the Lyrics feature and translated lyrics\n\u2022 Sleep timer function (for those beauty Zzzzzz)\n\u2022 Sharing function for spreading the love on socials\n\n\nLooking for a level up? Switch to Deezer Premium**, Deezer Family** or Deezer Student** and you'll benefit from these added perks:\n\n\u2022 No ads, ever!\n\u2022 Offline listening (just cause the signal cuts doesn't mean the music has to)\n\u2022 Unlimited skips, unlimited listening\n\u2022 HiFi sound (High Fidelity, lossless quality at 1,411 kbps)\n\u2022 FLAC-standard quality on millions of tracks\n\u2022 High-end sound system compatibility\n\nCompatible devices:\nGet Deezer on all your connected devices \u2014 Google Nest, HomePod Mini, Amazon Alexa, Sonos and more.",
+            "iconURL": "https://img.ipa4fun.com/23/af/ed/292738169-icon.webp",
+            "tintColor": "8c4384",
+            "category": "Entertainment",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-1.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-2.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-3.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-4.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-5.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-6.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-7.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-8.webp",
+                "https://img.ipa4fun.com/23/af/ed/292738169-screenshot-9.webp"
+            ],
+            "version": "7.15.0",
+            "versionDate": "2023-10-22",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Deezer.v7.15.0.+.Deezelife.v0.5.ipa",
+            "versionDescription": "\u2022 Updated Deezer to v7.15.0 - Last working version with tweak.",
+            "size": 29200000,
+            "versions": [
+                {
+                    "version": "7.15.0",
+                    "date": "2023-10-22",
+                    "localizedDescription": "\u2022 Updated Deezer to v7.15.0 - Last working version with tweak.",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Deezer.v7.15.0.+.Deezelife.v0.5.ipa",
+                    "size": 29200000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "SoundCloud++",
+            "bundleIdentifier": "com.soundcloud.TouchApp",
+            "developerName": "Rov3r",
+            "subtitle": "SoundCloud with no ads! Read Description.",
+            "localizedDescription": "DOES NOT WORK ON ALTSTORE/SIDESTORE. Requires Trollstore/Cert to install\n\nEnhance your SoundCloud experience with the following features:\n\n\u2022 Remove Ads\n\u2022 Remove Promoted Playlists\n\u2022 Remove Upsell Buttons\n\n\nHOW TO INSTALL IF NOT WORKING\n\n(iOS 15):\n\n1. Download the REGULAR SoundCloud app from the app store (IMPORTANT)\n2. Sign in to the app\n3. Delete the app while still signed in\n4. Download the IPA (app file) from the table below.\n5. Install using your preferred sideloading method** (AltStore, Sideloadly, appdb, etc.)\n6. Once installed, you can enjoy, as you should be logged in already.\n\n\n(iOS 16):\n\n1. Until fixed, users will have to link a Google or Facebook account to their SoundCloud. This can be done on the SoundCloud website.\n2. Download the IPA (app file) from the table below.\n3. Install using your preferred sideloading method** (AltStore, Sideloadly, appdb, etc.)\n4. Sign in using your Google or Facebook account\n5. Use the same method uYou used for bypassing the unsafe installation login error\n\n\n(iOS 16) [Method 2]:\n\n1. Until fixed, users will have to link a Google or Facebook account to their SoundCloud. This can be done on the SoundCloud website.\n2. Download the REGULAR SoundCloud app from the AppStore\n3. Sign in to the app using Google or Facebook Account sign-in\n4. Delete the app while still signed in\n5. Download the IPA (app file) from the table below.\n6. Install using your preferred sideloading method** (AltStore, Sideloadly, appdb, etc.)\n7. Once installed, you can enjoy, as you should be logged in already.",
+            "iconURL": "https://i.imgur.com/a0VxTYB.jpeg",
+            "tintColor": "0a0a0a",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-1.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-2.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-3.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-4.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-5.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-6.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-7.webp",
+                "https://img.ipa4fun.com/b1/62/d8/336353151-screenshot-8.webp"
+            ],
+            "version": "7.65.4",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v7.65.4.+.SCMusicPlus.v24.9.1-3.ipa",
+            "versionDescription": "\u2022 Updated SoundCloud to v7.65.4",
+            "size": 57600000,
+            "versions": [
+                {
+                    "version": "7.65.4",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated SoundCloud to v7.65.4",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v7.65.4.+.SCMusicPlus.v24.9.1-3.ipa",
+                    "size": 57600000
+                },
+                {
+                    "version": "7.14.0",
+                    "date": "2024-05-10",
+                    "localizedDescription": "\u2022 Updated SoundCloud to v7.14.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v7.14.0.+.SCMusicPlus.v2.2.1.ipa",
+                    "size": 57600000
+                },
+                {
+                    "version": "7.2.0",
+                    "date": "2023-10-22",
+                    "localizedDescription": "\u2022 Updated SoundCloud to v7.2.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v7.2.0.+.SCMusicPlus.v2.2.1.ipa",
+                    "size": 47600000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Spotify++ (NEW)",
+            "bundleIdentifier": "com.spotify.client",
+            "developerName": "Eevee",
+            "subtitle": "A new and improved Spotify tweak!",
+            "localizedDescription": "This tweak makes Spotify think that you have a Premium subscription, granting free listening, just like Spotilife.\n\nAlthough there are restrictions:\n\n\u2022 Using \"Very High\" audio quality\n\u2022 Downloading songs/playlists (podcast downloads work, though)\n",
+            "iconURL": "https://img.ipa4fun.com/ef/cd/d4/324684580-logo.webp",
+            "tintColor": "1fd362",
+            "category": "Entertainment",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-1.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-2.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-3.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-4.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-5.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-6.webp"
+            ],
+            "version": "9.0.20",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v9.0.20.+.Eevee.v5.8.7.ipa",
+            "versionDescription": "\u2022 Updated Spotify to v9.0.20\n\u2022 Updated Eevee to v5.8.7",
+            "size": 76500000,
+            "versions": [
+                {
+                    "version": "9.0.20",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Updated Spotify to v9.0.20\n\u2022 Updated Eevee to v5.8.7",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v9.0.20.+.Eevee.v5.8.7.ipa",
+                    "size": 76500000
+                },
+                {
+                    "version": "8.9.80",
+                    "date": "2024-10-09",
+                    "localizedDescription": "(5.4 - Current)\n\n\u2022 Updated Ukrainian localization by @LIKVIDATOR1337\n\u2022 Updated Turkish localization by @gototheskinny\n\u2022 Updated Danish localization by @UnexcitingDean\n\n(5.3)\n\n\u2022 Liked Songs on artist page\n\u2022 Improved Reset Data option (now clears /Library/Caches/ too, progress animation)\n\u2022 Updated dumped configuration; fixed app crashes when clicking on three dots on song page\n\u2022 Updated swift-protobuf to 1.28.1 and Swift to version 6 (Xcode 16.0)\n\u2022 Fixed Download action app crashes, improved its hooking logic\n\u2022 PetitLyrics is now available for everyone\n\u2022 Updated Simplified Chinese localization by @xiangfeidexiaohuo\n\u2022 Updated Traditional Chinese localizaton by @ElliotCHEN37\n\u2022 Updated Vietnamese localization by @Richard-NDC\n\n(5.2)\n\n\u2022 Brazil loc by @emal0n\n\u2022 French localization corrections by @5jd\n\n(5.1)\n\n\u2022 French localization by @5jd\n\n(5.0)\n\n\u2022 Danish localization by @UnexcitingDean\n\u2022 Swiss German localization by @An0n-00\n\u2022 Polish localization by @CukierDev\n\u2022 Nepalese localization by @3xynos7\n\u2022 German localization corrections by @wlxxd\n\u2022 Azerbaijani localization by @by3lish\n\n(4.9)\n\n\u2022 Musixmatch source support for local files\n\u2022 Lyrics colors support for local files\n\u2022 Bulgarian localization by @schweppes-0x\n\u2022 Traditional Chinese localization corrections by @Neo1102\n\u2022 Korean localization by @speedyfriend433\n\u2022 Vietnamese localization by @Richard-NDC\n\u2022 German localization by @wlxxd\n\u2022 Persian localization by @Incognito-Coder\n\n(4.8)\n\n\u2022 Fixed original lyrics colors\n\u2022 Spanish localization by @longopy\n\u2022 Simplified Chinese localization by @xiangfeidexiaohuo\n\u2022 Italian localization by @LivioZ\n\u2022 Russian localization\n\u2022 Ukrainian localization by @LIKVIDATOR1337\n\u2022 Turkish localization by @gototheskinny\n\u2022 Traditional Chinese localization by @ElliotCHEN37\n\n(4.7)\n\n\u2022 Fixed lyrics not appearing issue\n\u2022 Fixed Premium patching for recent versions; removed static method\n\u2022 Musixmatch romanization and translation now work simultaneously\n\u2022 Added localizations support; feel free to open pull requests with your .lproj\n\n(4.6)\n\n\u2022 Fixed popups white background bug on iPad\n\n(4.5)\n\n\u2022 Musixmatch lyrics translation is now integrated natively\n\u2022 Local lyrics romanization for all sources\n\u2022 PetitLyrics source (only for Japanese users)\n\u2022 Added instrumental lyrics message\n\u2022 Fixed Musixmatch language code issues for some languages\n\u2022 Fixed native popups white background bug agian\n\u2022 Other minor improvements\n\n(4.4)\n\n\u2022 Fixed crashes on iOS 14 (Spotify 8.9.8) and added support for 8.9.54\n\u2022 Redesigned Settings\n\u2022 Option to show romanized lyrics on Musixmatch and Genius\n\u2022 Option to show translated Musixmatch lyrics\n\u2022 Musixmatch lyrics translation is now integrated natively\n\u2022 Local lyrics romanization for all sources\n\u2022 PetitLyrics source (only for Japanese users)\n\u2022 Added instrumental lyrics message\n\u2022 Fixed Musixmatch language code issues for some languages\n\u2022 Fixed native popups white background bug agian\n\u2022 Other minor improvements\n\n(4.3)\n\n\u2022 Fixed \"Couldn't load the lyrics for this song\" message when they are restricted on Musixmatch\n\u2022 Option to show fallback reasons in the lyrics card header\n\u2022 Updated OpenSpotifySafariExtension no longer mismatches on links like charts.spotify.com\n\n(4.2)\n\n\u2022 Real fix for crashes with LRCLIB\n\u2022 The tweak now searches only songs on Genius (no articles anymore)\n\u2022 Improved URLSession intercepts (fixes #182 and likely resolves login issues)\n\u2022 Fixed iPad Musixmatch token and blank area issues\n\u2022 Added Lyrics Colors option\n\u2022 Added version section and checking for update\n\n(4.1)\n\n\u2022 Original colors for lyrics available on Spotify\n\u2022 Fixed LRCLIB lyrics crash for some songs and issue of the settings view being too wide on iPad (pull request)\n\u2022 Overwrite Configuration option. Try using it if you experience issues like appearing ads; it might help, but it's not guaranteed\n\u2022 Musixmatch invalid token popup and better token input\n\u2022 Dynamic Premium patching method by default",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.80.+.Eevee.v5.4.ipa",
+                    "size": 76500000
+                },
+                {
+                    "version": "8.9.42",
+                    "date": "2024-05-28",
+                    "localizedDescription": "\u2022 Dynamic Premium Patching! - The tweak can now intercept Spotify requests to load user data, deserialize it, and modify the parameters in real-time. You can select the Dynamic Premium patching method in the EeveeSpotify settings.\n\u2022 Do Not Patch Premium option (for users with an active Premium subscription)\n\u2022 Reset Data option\n\u2022 Fixed native popups white background bug\n\u2022 Fixed opening Spotify links in the app when it's closed\n\nNOTE: When updating from an older tweak version, you need to go to EeveeSpotify settings and set the Premium patching method (either static or dynamic).\n\n\n(From v3.1)\n\n\u2022 Genius Fallback: Load lyrics from Genius if there is a problem with LRCLIB or Musixmatch\n\u2022 Updated OpenSpotifySafariExtension: Now supports all Spotify links and works great\n\u2022 Dark PopUps option\n\u2022 Improved lyrics colors (not so light and washed out, looks more like the original)\n\u2022 Improved song search algorithm on Genius or LRCLIB\n\u2022 Fixed EeveeSpotify settings crash when tapping on tabbar\n\u2022 Updated Musixmatch token alert message; the tweak now allows you to paste debug info",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.42.+.Eevee.v4.0.ipa",
+                    "size": 71100000
+                },
+                {
+                    "version": "8.9.38",
+                    "date": "2024-05-10",
+                    "localizedDescription": "\u2022 EeveeSpotify now supports LRCLIB and Musixmatch time-synced lyrics sources! You can select your preferred source in the tweak settings\n\u2022 Lyrics colors are now normalized\n\u2022 Fixed Genius issue where the tweak would pick a translation instead of the original lyrics",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.38.+.Eevee.v3.0.ipa",
+                    "size": 68800000
+                },
+                {
+                    "version": "8.9.36",
+                    "date": "2024-05-08",
+                    "localizedDescription": "\u2022 Fixed app crashing when opening the player\n\u2022 EeveeSpotify now replaces Spotify monthly limited lyrics with Genius! (If it shows the limit has been reached there are no lyrics available on genius, this is different to the lyrics spotify provide)\n\u2022 Added OpenWithSpotify extension to open Spotify links in safari (must be enabled)\n\u2022 Updated Spotify to v8.9.36",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.36.+.Eevee.v2.1.ipa",
+                    "size": 69100000
+                },
+                {
+                    "version": "8.9.34",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 Replaced Spotify v8.6.42 (Spotilife) with Spotify v8.9.34 (Eevee)",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.v8.9.34.+.Eevee.v1.4.1.ipa",
+                    "size": 65900000
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.security.application-groups",
+                    "com.apple.developer.associated-domains",
+                    "com.apple.developer.carplay-audio",
+                    "get-task-allow",
+                    "com.apple.developer.group-session",
+                    "com.apple.developer.healthkit",
+                    "keychain-access-groups",
+                    "com.apple.developer.networking.multicast",
+                    "aps-environment",
+                    "com.apple.developer.healthkit.access",
+                    "com.apple.developer.applesignin",
+                    "com.apple.developer.siri",
+                    "com.apple.developer.networking.wifi-info"
+                ],
+                "privacy": {
+                    "NSAppleMusicUsageDescription": "App accesses Apple Music for streaming music.",
+                    "NSBluetoothAlwaysUsageDescription": "App requires continuous access to Bluetooth.",
+                    "NSBluetoothPeripheralUsageDescription": "App uses Bluetooth for peripheral devices.",
+                    "NSCameraUsageDescription": "App uses the camera for capturing photos or videos.",
+                    "NSFaceIDUsageDescription": "App uses Face ID for authentication.",
+                    "NSHealthUpdateUsageDescription": "App updates health-related data in Health.",
+                    "NSHealthShareUsageDescription": "App shares health-related data with Health.",
+                    "NSLocalNetworkUsageDescription": "App accesses devices on the local network.",
+                    "NSMicrophoneUsageDescription": "App uses the microphone to record audio.",
+                    "NSMotionUsageDescription": "App uses motion sensors for tracking movement.",
+                    "NSPhotoLibraryAddUsageDescription": "App adds photos to the user's photo library.",
+                    "NSPhotoLibraryUsageDescription": "App accesses the user's photo library.",
+                    "NSUserTrackingUsageDescription": "App tracks user activity for advertising purposes."
+                }
+            },
+            "beta": false
+        },
+        {
+            "name": "Spotify++ (Old)",
+            "bundleIdentifier": "com.spotify.client-old",
+            "developerName": "iJulioVerne",
+            "subtitle": "The original Spotilife tweak, along with other tweaks",
+            "localizedDescription": "USE THIS IF YOU DO NOT LIKE THE NEW ONE OR IF ITS NOT WORKING\n\nI would highly recommend you use the new Spotify tweak as it has been updated to work on newer Spotify versions and is currently being updated. However this tweak may stop working in the near future as it is an old version.\n\n\n\nSpotify++ contants a tweak that activates Premium. As well as a number of tweaks to customise the UI and improve the overall user experience.\n\nHere are the following tweaks:\n\n\u2022 Spotilife - Premium for free.\n\n\u2022 Sposify - A Tweak to customize your Spotify App UI and expand functionalities.\n\n\u2022 Volify - Adds a volume slider to Spotify.\n\n\u2022 SpotifyAllowSetting - Allows you to access all of the settings in Spotify that are normally disabled when someone else is playing music from another device.\n\n\u2022 SpotifyNoPodcasts - Hides Podcasts from from Home and Library\n\n\u2022 SpotifyHighQuality - Enables 'Very High' Quality in Audio Quality settings\n\n\u2022TrueShuffle - Enables true random shuffling (Spotify prioritizes Songs you have listened to more often by default)\n\n\u2022 Spoticentre - Centres the song/artist in now playing (Only working on some devices)\n\n\n\nNOTE\n\nThe \u2018Car\u2019 setting has been replaced with the sposify tweak settings so unfortunatley you cannot change car settings - all good tho, nobody use that shi anyways, and when car view enables when u in the car, just click \u2018turn off car view\u2019 at the top right corner.\n\n\nAll tweaks are injected by myself, WuXu, and ensured to be working perfectly ;)\n",
+            "iconURL": "https://img.ipa4fun.com/ef/cd/d4/324684580-logo.webp",
+            "tintColor": "1fd362",
+            "category": "Entertainment",
+            "screenshotURLs": [
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-1.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-2.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-3.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-4.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-5.webp",
+                "https://img.ipa4fun.com/ef/cd/d4/324684580-screenshot-6.webp"
+            ],
+            "version": "8.6.42-0.2",
+            "versionDate": "2023-04-24",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.Tweaked-OG.v8.6.42-0.2.ipa",
+            "versionDescription": "\u2022 Added SpotilifeFix - May fix the issue where premium is not activated after downloading on certain devices and IOS versions\n\u2022 Added OpenSpotifySafariExtension - Enable in Safari extensions to fix Spotify links not opening the app!",
+            "size": 47500000,
+            "versions": [
+                {
+                    "version": "8.6.42-0.2",
+                    "date": "2023-04-24",
+                    "localizedDescription": "\u2022 Added SpotilifeFix - May fix the issue where premium is not activated after downloading on certain devices and IOS versions\n\u2022 Added OpenSpotifySafariExtension - Enable in Safari extensions to fix Spotify links not opening the app!",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.Tweaked-OG.v8.6.42-0.2.ipa",
+                    "size": 47500000
+                },
+                {
+                    "version": "8.6.42-0.1",
+                    "date": "2023-03-19",
+                    "localizedDescription": "\u2022 Added SpotifyNoPodcasts\n\u2022 Added SpotifyHighQuality\n\u2022 Added Spoticentre\n\u2022 Added TrueShuffle",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Spotify.Tweaked.v8.6.42-0.1.ipa",
+                    "size": 47000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "YouTube++",
+            "bundleIdentifier": "com.google.ios.youtube",
+            "developerName": "Dayanch96",
+            "subtitle": "The All-In-One Tweak for YouTube.",
+            "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n\u2022 Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n\u2022 Copy video, comment, and post information\n\u2022 Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n\u2022 Player settings: Gestures, default quality, preferred audio track\n\u2022 Save, Load and Restore settings. Clear cache once or automatically on app startup\n\u2022 Built-in SponsorBlock\n\u2022 And much, much more",
+            "iconURL": "https://img.ipa4fun.com/65/82/9f/544007664-logo.webp",
+            "tintColor": "f90505",
+            "category": "Entertainment",
+            "screenshotURLs": [
+                "https://i.imgur.com/nJSE7u7.jpeg",
+                "https://i.imgur.com/5ABmJ5d.jpeg",
+                "https://i.imgur.com/B1NnJb8.jpeg",
+                "https://i.imgur.com/1l2lFCm.jpeg",
+                "https://i.imgur.com/tZ2yvOY.jpeg",
+                "https://i.imgur.com/ayNc4BB.jpeg"
+            ],
+            "version": "20.09.3",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Youtube.v20.09.3.+.YTLite.v5.1.Full.ipa",
+            "versionDescription": "\u2022 YouTube updated to v19.39.1\n\u2022 YTLite (Full) updated to v5.1",
+            "size": 106000000,
+            "versions": [
+                {
+                    "version": "20.09.3",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 YouTube updated to v19.39.1\n\u2022 YTLite (Full) updated to v5.1",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Youtube.v20.09.3.+.YTLite.v5.1.Full.ipa",
+                    "size": 106000000
+                },
+                {
+                    "version": "19.39.1",
+                    "date": "2024-10-09",
+                    "localizedDescription": "\u2022 YouTube updated to v19.39.1\n\u2022 uYouEnhanced replaced with YTLiteFull v5.0.2",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v19.39.1.+.YTLiteFull.v5.0.2.ipa",
+                    "size": 106000000
+                },
+                {
+                    "version": "19.16.3",
+                    "date": "2024-04-30",
+                    "localizedDescription": "\u2022 YouTube updated to v19.16.3\n\u2022 uYouEnhanced updated to v3.0.3",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v19.16.3.+.uYouEnhanced.v3.0.3.ipa",
+                    "size": 119000000
+                },
+                {
+                    "version": "18.49.3",
+                    "date": "2024-01-07",
+                    "localizedDescription": "\u2022 YouTube updated to v18.49.3\n\u2022 uYouEnhanced updated to v3.0.1",
+                    "downloadURL": "https://github.com/arichorn/uYouEnhanced/releases/download/v18.49.3-3.0.1-F3/uYouEnhanced_18.49.3_3.0.1_F3.ipa",
+                    "size": 121000000
+                },
+                {
+                    "version": "18.40.1",
+                    "date": "2023-10-22",
+                    "localizedDescription": "\u2022 YouTube updated to v18.14.1\n\u2022 uYouPlusExtra updated to v3.0.1",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v18.40.1.+.uYouPlusExtra.v3.0.1.ipa",
+                    "size": 121000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Duolingo++",
+            "bundleIdentifier": "com.duolingo.DuolingoMobile",
+            "developerName": "Laxus",
+            "subtitle": "Duolingo with Super Duolingo Activated!",
+            "localizedDescription": "Learn a new language with the world\u2019s most-downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.\n\nDesigned by language experts and loved by hundreds of millions of learners worldwide, Duolingo helps you prepare for real conversations in Spanish, French, Chinese, Italian, German, English, and more.\n\nWhether you\u2019re learning a language for travel, school, career, family and friends, or your brain health, you\u2019ll love learning with Duolingo.\n\nWhy Duolingo?\n\u2022 Duolingo is fun and effective. Game-like lessons and fun characters help you build solid speaking, reading, listening, and writing skills.\n\n\u2022 Duolingo works. Designed by language experts, Duolingo has a science-based teaching methodology proven to foster long-term language retention.\n\n\u2022 Track your progress. Work toward your language learning goals with playful rewards and achievements when you make practicing a daily habit!\n\n\u2022 Join 300+ million learners. Stay motivated with competitive Leaderboards as you learn alongside our global community.\n\n\u2022 Every language course is free. Learn Spanish, French, German, Italian, Russian, Portuguese, Turkish, Dutch, Irish, Danish, Swedish, Ukrainian, Esperanto, Polish, Greek, Hungarian, Norwegian, Hebrew, Welsh, Arabic, Latin, Hawaiian, Scottish Gaelic, Vietnamese, Korean, Japanese, English, and even High Valyrian!",
+            "iconURL": "https://i.imgur.com/gl8jTYA.jpeg",
+            "tintColor": "7cd404",
+            "category": "Lifestyle",
+            "screenshotURLs": [
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/85/3c/6d/853c6dcc-509f-af17-1a68-5a14a1ddfcd6/tns.lgtxetwx.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/d0/00/a9/d000a923-fdb2-074c-29c9-b0b756210be3/tns.egimlxov.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/7d/1b/c9/7d1bc96c-d220-6613-031c-e04dfd587375/tns.jhthyhvf.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/f3/fc/45/f3fc4501-0e63-4c86-c843-d62f024cb72e/tns.beyxhlrn.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/9e/a8/70/9ea87049-d4ce-ba8b-0186-a06f7daec44c/tns.qtcpgyze.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f9/5f/74/f95f7417-abd2-1da0-df60-25c5b4cc7b42/tns.xletkwju.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/71/50/25/7150254b-c1fe-0f0a-3080-d132ec1df02b/tns.kxzrjpco.png/314x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/66/d8/e5/66d8e526-9452-3aef-929c-1e91c675512a/7c022d98-f86f-4b31-8503-632ddcd73657_6.5-inch-screen9__U00283_U0029.png/314x0w.webp"
+            ],
+            "version": "7.29.0",
+            "versionDate": "2025-03-04",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Duolingo.v7.29.0.Cracked.ipa",
+            "versionDescription": "\u2022 Duolingo Updated to v7.29.0",
+            "size": 101000000,
+            "versions": [
+                {
+                    "version": "7.29.0",
+                    "date": "2025-03-04",
+                    "localizedDescription": "\u2022 Duolingo Updated to v7.29.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Duolingo.v7.29.0.Cracked.ipa",
+                    "size": 101000000
+                },
+                {
+                    "version": "7.9.0",
+                    "date": "2024-05-11",
+                    "localizedDescription": "\u2022 Duolingo Updated to v7.9.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Duolingo.Cracked.v7.9.0.ipa",
+                    "size": 101000000
+                },
+                {
+                    "version": "6.196.0",
+                    "date": "2023-10-23",
+                    "localizedDescription": "\u2022 Duolingo Updated to v6.196.0",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Duolingo.Cracked.v6.196.0.ipa",
+                    "size": 112000000
+                }
+            ],
+            "beta": false
+        },
+        {
+            "name": "Messenger++",
+            "bundleIdentifier": "com.facebook.Messenger",
+            "developerName": "Michael Lema",
+            "subtitle": "The ultimate Facebook Messenger tweak!",
+            "localizedDescription": "Shark is the ultimate Facebook Messenger tweak. It is the first and only tweak to add additional security to the app. You can access the tweak settings on the Messenger's settings page.\n\nFeatures\n- Disable Marking Messages\n- Disable Marking Stories\n- Disable Typing Status\n- Save Story images and videos\n\nAuthentication\n- Shark adds an extra layer of security with Face ID/Touch ID to view the Messenger App\n\nNote: There is a bug where nothing loads when you first sign in. Simply relaunch the app to fix this issue.",
+            "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/85/36/e6/8536e6ea-7b2d-775a-bd2d-62beac227451/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220-0.png/460x0w.webp",
+            "tintColor": "c844c6",
+            "category": "Social",
+            "screenshotURLs": [
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/b6/9b/fb/b69bfb93-41be-bdca-5b4c-c27519b474c2/391db841-c2fe-45c1-bc57-c1fbc16f3b35_iPhone_6.5__-_Screen_1.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/9d/ad/c5/9dadc57c-5684-bfc6-b384-bd2a7152bde1/886304e6-ebc9-4468-b0af-5d4b33e434c2_iPhone_6.5__-_Screen_3.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9e/8d/cb/9e8dcb43-ce79-c4ff-43ef-e3548847d87d/0014da8a-bb5a-4fe1-923d-90c1f05530e9_iPhone_6.5__-_Screen_4.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/85/1f/95/851f951f-6e93-cdac-d2a3-813316c5db57/f121cd69-ba21-47c4-bbd5-c8f5e690f206_iPhone_6.5__-_Screen_5.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/d2/08/e9/d208e9b4-786b-5846-3dd9-e922e3700096/56915158-747c-471d-bb40-fc369ed93d2d_iPhone_6.5__-_Screen_6.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/db/8f/9c/db8f9c34-d7d5-b1f3-2be4-e4fa3a6906f5/ee927225-0cfa-43a1-8b63-f97eabc3237c_iPhone_6.5__-_Screen_7.jpg/460x0w.webp",
+                "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/e5/97/49/e59749f5-d582-4840-dbcc-0e72bdbf09ec/8ed80d4b-be7b-4048-a099-d1d0ff5555ab_iPhone_6.5__-_Screen_8.jpg/460x0w.webp"
+            ],
+            "version": "390.0",
+            "versionDate": "2023-10-23",
+            "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Messenger.v390.0.+.Shark.v2.2.1.ipa",
+            "versionDescription": "\u2022 Added Messenger v390.0 (Current working version with crack)",
+            "size": 42500000,
+            "versions": [
+                {
+                    "version": "390.0",
+                    "date": "2023-10-23",
+                    "localizedDescription": "\u2022 Added Messenger v390.0 (Current working version with crack)",
+                    "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Messenger.v390.0.+.Shark.v2.2.1.ipa",
+                    "size": 42500000
+                }
+            ],
+            "beta": false
+        }
+    ]
+}
